@@ -26,9 +26,9 @@ export function UserContextProvider({children}){
     // api.defaults.headers.authorization = `Bearer ${tokenData}`;
   }, [])
 
-  async function handleSession(data,){
+  async function handleSession(data){
     try {
-      const response = await api.post('/session', data)
+      const response = await api.post('/login', data)
       toast.success(`Seja bem-vindo ${response.data.user.name}`)
 
       setUser(response.data.user)
@@ -40,6 +40,7 @@ export function UserContextProvider({children}){
 
       history.push("/");
     } catch (error) {
+      console.log(error.response)
       toast.error(error.response.data.error)
       console.log(error.response.data)
     }
