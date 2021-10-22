@@ -1,7 +1,8 @@
 
-import { Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import { useUser } from '../hooks/useUser';
+import { ErrorNotFound } from '../pages/error';
 import { PublicRoutes } from './public';
 
 export function Routes() {
@@ -9,6 +10,7 @@ export function Routes() {
 
   return (
     <Switch>
+      <Route path="/" component={ErrorNotFound}/>
       {
         user ? (
           <>
@@ -19,7 +21,6 @@ export function Routes() {
           <PublicRoutes />
         )
       }
-      {/* <Route path="/" component={}/> */}
     </Switch>
   );
 }
