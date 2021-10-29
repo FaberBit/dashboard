@@ -1,8 +1,9 @@
 
-import { Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
 import { useUser } from '../hooks/useUser';
-import { ErrorNotFound } from '../pages/error';
+// import { ErrorNotFound } from '../pages/error';
+import { PrivateRoutes } from './private';
 import { PublicRoutes } from './public';
 
 export function Routes() {
@@ -11,16 +12,9 @@ export function Routes() {
   return (
     <Switch>
       {
-        user ? (
-          <>
-          {/* <Route path="/admin/dashboard" exact component={AcessDashboard} /> */}
-        </>
-        ) : 
-        (
-          <PublicRoutes />
-          )
-        }
-      <Route path="/" component={ErrorNotFound}/>
+        user ? <PrivateRoutes />  : <PublicRoutes />
+      }
+      {/* <Route path="/" component={ErrorNotFound}/> */}
     </Switch>
   );
 }

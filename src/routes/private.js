@@ -2,24 +2,12 @@ import { Route, Switch } from 'react-router-dom';
 
 // import { useUser } from '../hooks/useUser';
 
-// import { AcessDashboard } from '../pages/Acess/Dashboard';
+import { Home } from '../pages/private/home';
 
-export function AcessRoutes() {
-  // const { manager } = useUser()
-
+export function PrivateRoutes() {
   return (
     <Switch>
-      {
-        manager ? (
-          <>
-          {/* <Route path="/admin/dashboard" exact component={AcessDashboard} /> */}
-        </>
-        ) : 
-        (
-          <></>
-          // <Route path="/acess" exact component={AcessLogin} />
-        )
-      }
+      <Route path="/" component={Home}/>
     </Switch>
   );
 }

@@ -40,9 +40,13 @@ export function UserContextProvider({children}){
 
       history.push("/");
     } catch (error) {
-      console.log(error.response)
-      toast.error(error.response.data.error)
-      console.log(error.response.data)
+      try {
+        console.log(error.response)
+        toast.error(error.response.data.error)
+        console.log(error.response.data)
+      } catch (err) {
+        toast.error("Servidor offline tente mais tarde.")
+      }
     }
   }
 
