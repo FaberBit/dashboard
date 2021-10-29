@@ -2,8 +2,8 @@ import React from 'react';
 import { AiOutlinePoweroff } from "react-icons/ai";
 import { HeaderContainer, HeaderContent } from './styles';
 
-import {useUser} from '../../hooks/useUser'
-import colors from '../../styles/colors';
+import {useUser} from '../../../hooks/useUser'
+import colors from '../../../styles/colors';
 
 export function HeaderMacro({ title }) {
   const { user, host, LogoutSession } = useUser()
