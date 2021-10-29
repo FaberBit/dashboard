@@ -1,4 +1,5 @@
 import React from 'react'
+import { HeaderMacro } from '../../../components/headerMacro';
 // import { IoLogInOutline } from "react-icons/io5";
 
 // import BannerLogin from '../../../assets/img/banners/bannerLoginA.png'
@@ -10,7 +11,7 @@ import { Container } from './styles';
 export function Home() {
   return (
     <Container>
-      <h2>Home</h2>
+      <HeaderMacro title="Administre sua empresa facilmente."/>
     </Container>
   )
 }

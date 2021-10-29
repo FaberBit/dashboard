@@ -10,7 +10,7 @@ export function PublicRoutes() {
 
   return (
     <>
-      <Route path="/login" exact component={Login} />
+      <Route path="/" exact component={Login} />
     </>
   );
 }
