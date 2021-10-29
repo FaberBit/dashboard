@@ -8,8 +8,8 @@ export const ItemContainer = styled(Link)`
   align-items: center;
   background-color: ${colors.white};
 
-  width: 280px;
-  height: 200px;
+  min-width: 280px;
+  min-height: 200px;
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 

@@ -7,7 +7,7 @@ import { Home } from '../pages/private/home';
 export function PrivateRoutes() {
   return (
     <Switch>
-      <Route path="/" component={Home}/>
+      <Route path="/" exact component={Home}/>
     </Switch>
   );
 }
