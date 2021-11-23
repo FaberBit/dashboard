@@ -6,6 +6,7 @@ import { HeaderMain } from '../../../../components/headers/main'
 import { Container, Content, Item, ListItens } from './styles';
 
 import SearchSvg from '../../../../assets/img/banners/search.svg'
+import { searchItems } from '../../../../utils/searchItems';
 
 export function FindView() {
   return (
@@ -16,37 +17,13 @@ export function FindView() {
         <img src={SearchSvg} alt="Search" />
 
         <ListItens>
-          <Item to="/">
-            <span>Clientes</span>
-          </Item>
-
-          <Item to="/">
-            <span>Funcionarios</span>
-          </Item>
-
-          <Item to="/">
-            <span>Lanchas</span>
-          </Item>
-
-          <Item to="/">
-            <span>Jetskis</span>
-          </Item>
-
-          <Item to="/">
-            <span>Agendamentos</span>
-          </Item>
-
-          <Item to="/">
-            <span>Pagamentos</span>
-          </Item>
-
-          <Item to="/">
-            <span>Classificados</span>
-          </Item>
-
-          <Item to="/">
-            <span>Revisões</span>
-          </Item>
+          {
+            searchItems.map(item => (
+              <Item to={`/view/${item.title}/${item.encounter}`} key={item.id}>
+                <span>{item.title}</span>
+              </Item>
+            ))
+          }
         </ListItens>
       </Content>
     </Container>
