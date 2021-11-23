@@ -11,7 +11,9 @@ export function HeaderMain({ title }) {
   return (
     <HeaderContainer>
       <HeaderTitle>
-        <img src={LogoImg} alt="FaberBit" />
+        <a href="/">
+          <img src={LogoImg} alt="FaberBit" />
+        </a>
         <h2>{title}</h2>
       </HeaderTitle>
 
