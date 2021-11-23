@@ -1,4 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
+import { FindNew } from '../pages/private/find/new';
 import { FindView } from '../pages/private/find/view';
 
 // import { useUser } from '../hooks/useUser';
@@ -11,6 +12,7 @@ export function PrivateRoutes() {
     <Switch>
       <Route path="/" exact component={Home}/>
       <Route path="/find/view" exact component={FindView}/>
+      <Route path="/find/new" exact component={FindNew}/>
       <Route path="/view/:title/:encounter" exact component={View}/>
     </Switch>
   );
