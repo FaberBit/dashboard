@@ -23,7 +23,7 @@ export function Home() {
         
         <NavigationItem title="Cadastre novos dados" subTitle="com poucos clicks" path="/find/new" source={NewImg}/>
         
-        <NavigationItem title="Acesse suas notificações" subTitle="para ficar informado" path="/find/view" source={NotifyImg}/>
+        <NavigationItem title="Acesse suas notificações" subTitle="para ficar informado" path="/notifications" source={NotifyImg}/>
         
         <NavigationItem title="Atualize sua conta" subTitle="com facilidade" path="/find/view" source={ProfileImg}/>
         
@@ -31,8 +31,6 @@ export function Home() {
         
         <NavigationItem title="Reporte algum bug" subTitle="e iremos corrigir" path="/find/view" source={BugImg}/>
       </Content>
-
-
     </Container>
   )
 }
