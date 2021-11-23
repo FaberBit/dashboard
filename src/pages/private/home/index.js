@@ -21,7 +21,7 @@ export function Home() {
       <Content>
         <NavigationItem title="Visualize seus dados" subTitle="em tempo real" path="/find/view" source={DataImg}/>
         
-        <NavigationItem title="Cadastre novos dados" subTitle="com poucos clicks" path="/find/view" source={NewImg}/>
+        <NavigationItem title="Cadastre novos dados" subTitle="com poucos clicks" path="/find/new" source={NewImg}/>
         
         <NavigationItem title="Acesse suas notificações" subTitle="para ficar informado" path="/find/view" source={NotifyImg}/>
         
