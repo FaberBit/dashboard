@@ -16,17 +16,25 @@ export const HeaderContainer = styled.div`
 `;
 
 export const HeaderContent = styled.div`
-  display: flex;
-  align-items: center;
-  /* justify-content: flex-start; */
-  /* background-color: violet; */
+    display: flex;
+    align-items: center;
 
-  span{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 2.125rem;
+  a{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* background-color: violet; */
+
+    span{
+      font-family: Poppins;
+      color: #000;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 2.125rem;
+    }
+
   }
 
   img{

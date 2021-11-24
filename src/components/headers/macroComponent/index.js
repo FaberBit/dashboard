@@ -12,8 +12,10 @@ export function HeaderMacro({ title }) {
       <h2>{title}</h2>
 
       <HeaderContent>
-        <span>{user.name}</span>
-        <img src={`${host}/files/${user.avatar}`} alt={user.name} />
+        <a href="/myaccount">
+          <span>{user.name}</span>
+          <img src={`${host}/files/${user.avatar}`} alt={user.name} />
+        </a>
         <button onClick={() => LogoutSession()}>
           <AiOutlinePoweroff color={colors.red} size={24}/>
         </button>
