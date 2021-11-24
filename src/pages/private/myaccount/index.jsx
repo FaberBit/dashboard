@@ -9,6 +9,7 @@ import ProfileSvg from "../../../assets/img/banners/profile.svg";
 import { useUser } from "../../../hooks/useUser";
 import colors from "../../../styles/colors";
 import { Input } from "../../../components/inputs/main";
+import { Button } from "../../../components/buttons/main";
 
 export function MyAccount() {
   const { host, user } = useUser();
@@ -33,6 +34,8 @@ export function MyAccount() {
           <Input title="Senha Antiga" width={416} placeholder="Sua senha"/>
 
           <Input title="Nova senha" width={416} placeholder="Uma nova senha segura"/>
+
+          <Button title="Salvar" width={140}/>
         </Form>
 
         <img src={ProfileSvg} alt='Search' />
