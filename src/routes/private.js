@@ -5,6 +5,7 @@ import { FindView } from '../pages/private/find/view';
 // import { useUser } from '../hooks/useUser';
 
 import { Home } from '../pages/private/home';
+import { MyAccount } from '../pages/private/myaccount';
 import { Notifications } from '../pages/private/notifications';
 import { View } from '../pages/private/view';
 
@@ -19,6 +20,7 @@ export function PrivateRoutes() {
       <Route path="/view/:title/:encounter" exact component={View}/>
 
       <Route path="/notifications" exact component={Notifications}/>
+      <Route path="/myaccount" exact component={MyAccount}/>
     </Switch>
   );
 }
