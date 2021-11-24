@@ -8,6 +8,7 @@ import { Container, Content, Form, InputImage } from "./styles";
 import ProfileSvg from "../../../assets/img/banners/profile.svg";
 import { useUser } from "../../../hooks/useUser";
 import colors from "../../../styles/colors";
+import { Input } from "../../../components/inputs/main";
 
 export function MyAccount() {
   const { host, user } = useUser();
@@ -26,6 +27,12 @@ export function MyAccount() {
               <BiCamera color={colors.primary} size={24} />
             </label>
           </InputImage>
+
+          <Input title="Nome da empresa *" width={416} placeholder="Nome fantasia"/>
+
+          <Input title="Senha Antiga" width={416} placeholder="Sua senha"/>
+
+          <Input title="Nova senha" width={416} placeholder="Uma nova senha segura"/>
         </Form>
 
         <img src={ProfileSvg} alt='Search' />
