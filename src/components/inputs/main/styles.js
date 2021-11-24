@@ -12,7 +12,7 @@ export const Container = styled.div`
 
   width: ${props => props.width ? `${String(props.width)}px` : "416px"};
 
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 
   input {
     width: 100%;

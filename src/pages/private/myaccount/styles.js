@@ -29,7 +29,19 @@ export const Form = styled.div`
   border-radius: 8px;
 
   width: 30rem;
-  height: 31.25rem;
+  height: 32.5rem;
+
+  h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #162D1E;
+    margin: 1rem auto;
+  }
 `;
 
 export const InputImage = styled.div`

@@ -11,7 +11,7 @@ export const Container = styled.button`
 
   width: ${(props) => (props.width ? `${String(props.width)}px` : "416px")};
   border: 0;
-  margin-top: .8rem;
+  margin-top: 1rem;
 
   height: 2rem;
 
