@@ -1,8 +1,6 @@
 import React from "react";
 
-import { useUser } from "../../../hooks/useUser";
-
-import { Container, Content, Form, InputImage, NotificationsList } from "./styles";
+import { Container, Content, Form, NotificationsList } from "./styles";
 
 import { HeaderMain } from "../../../components/headers/main";
 import { Input } from "../../../components/inputs/main";
@@ -11,7 +9,6 @@ import { TextBar } from "../../../components/box/textBar";
 import { TextArea } from "../../../components/inputs/textarea";
 
 export function Features() {
-  const { host, user } = useUser();
   return (
     <Container>
       <HeaderMain title='Novas Funcionalidades' />
