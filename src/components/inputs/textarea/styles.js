@@ -16,7 +16,7 @@ export const Container = styled.div`
 
   textarea {
     width: 100%;
-    height: 11.5rem;
+    height: ${props => props.height ? `${String(props.height)}px` : "11.5rem"};
     background-color: #fff;
     color: #162D1E;
     ::placeholder,
