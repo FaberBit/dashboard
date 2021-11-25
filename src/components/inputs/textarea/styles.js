@@ -14,9 +14,9 @@ export const Container = styled.div`
 
   margin-top: 1rem;
 
-  input {
+  textarea {
     width: 100%;
-    height: 2.4rem;
+    height: 11.5rem;
     background-color: #fff;
     color: #162D1E;
     ::placeholder,
