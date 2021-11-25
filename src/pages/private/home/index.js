@@ -27,7 +27,7 @@ export function Home() {
         
         <NavigationItem title="Atualize sua conta" subTitle="com facilidade" path="/myaccount" source={ProfileImg}/>
         
-        <NavigationItem title="Novas funcionalidades" subTitle="em desenvolvimento" path="/find/view" source={FeatureImg}/>
+        <NavigationItem title="Novas funcionalidades" subTitle="em desenvolvimento" path="/features" source={FeatureImg}/>
         
         <NavigationItem title="Reporte algum bug" subTitle="e iremos corrigir" path="/find/view" source={BugImg}/>
       </Content>
