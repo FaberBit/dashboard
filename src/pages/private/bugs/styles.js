@@ -11,7 +11,7 @@ export const Content = styled.div`
   display: grid;
   /* align-items: center; */
   justify-content: center;
-  grid-template-columns: 8fr 5fr;
+  grid-template-columns: 8fr 4fr;
   margin-top: 3.25rem;
 
   img {
@@ -28,8 +28,9 @@ export const Form = styled.div`
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
-  width: 30rem;
-  height: 32.5rem;
+  width: 21.25rem;
+  height: 26rem;
+  margin-top: 2rem;
 
   h4{
     font-weight: 600;
