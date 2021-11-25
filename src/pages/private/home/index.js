@@ -29,7 +29,7 @@ export function Home() {
         
         <NavigationItem title="Novas funcionalidades" subTitle="em desenvolvimento" path="/features" source={FeatureImg}/>
         
-        <NavigationItem title="Reporte algum bug" subTitle="e iremos corrigir" path="/find/view" source={BugImg}/>
+        <NavigationItem title="Reporte algum bug" subTitle="e iremos corrigir" path="/reports/bugs" source={BugImg}/>
       </Content>
     </Container>
   )
