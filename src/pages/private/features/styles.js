@@ -11,7 +11,7 @@ export const Content = styled.div`
   display: grid;
   /* align-items: center; */
   justify-content: center;
-  grid-template-columns: 8fr 5fr;
+  grid-template-columns: 8fr 2fr;
   margin-top: 3.25rem;
 
   img {
@@ -28,19 +28,32 @@ export const Form = styled.div`
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
-  width: 30rem;
-  height: 32.5rem;
+  width: 18rem;
+  height: 27rem;
 
-  h4{
+  h4 {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     /* identical to box height */
 
     text-align: center;
+    margin-top: 1rem;
+    color: #162d1e;
+  }
 
-    color: #162D1E;
-    margin: 1rem auto;
+  .subtitle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #162d1e;
+    margin-top: -0.5rem;
   }
 `;
 
