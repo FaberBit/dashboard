@@ -18,7 +18,7 @@ export function FormEdit() {
         <img src={NewSvg} alt='Form' />
 
         <Form>
-          <h4>Preencha os campos</h4>
+          <h4>Revise os campos</h4>
 
           <Input title="Nome*" width={416} placeholder="Nome" value="Any_Name"/>
 

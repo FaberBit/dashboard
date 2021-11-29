@@ -1,6 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import { ReportBugs } from '../pages/private/bugs';
 import { FormNew } from '../pages/private/entity/boat/new';
+import { FormEdit } from '../pages/private/entity/boat/update';
 import { Features } from '../pages/private/features';
 import { FindNew } from '../pages/private/find/new';
 import { FindView } from '../pages/private/find/view';
@@ -31,6 +32,7 @@ export function PrivateRoutes() {
       <Route path="/reports/bugs" exact component={ReportBugs}/>
 
       <Route path="/boat/new" exact component={FormNew}/>
+      <Route path="/boat/edit" exact component={FormEdit}/>
     </Switch>
   );
 }
