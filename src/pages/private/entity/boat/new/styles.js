@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -19,33 +18,29 @@ export const Content = styled.div`
   }
 `;
 
-export const ListItens = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 100px;
-  max-height: 253px;
-  max-width: 433px;
+export const Form = styled.div`
+  display: flex;
+  flex-direction: column;
   align-items: center;
-`;
 
-export const Item = styled(Link)`
-  width: 180px;
-  height: 40px;
-
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 30rem;
+  height: 37.5rem;
 
-  margin: 0 auto;
+  margin-top: -2rem;
 
-  span{
+  h4{
     font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #162D1E;
+    margin: 1rem auto;
   }
 `;
