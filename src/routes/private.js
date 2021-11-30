@@ -1,5 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import { ReportBugs } from '../pages/private/bugs';
+import { BoatDetails } from '../pages/private/entity/boat/details';
 import { FormNew } from '../pages/private/entity/boat/new';
 import { FormEdit } from '../pages/private/entity/boat/update';
 import { Features } from '../pages/private/features';
@@ -31,6 +32,7 @@ export function PrivateRoutes() {
 
       <Route path="/reports/bugs" exact component={ReportBugs}/>
 
+      <Route path="/boat/infos" exact component={BoatDetails}/>
       <Route path="/boat/new" exact component={FormNew}/>
       <Route path="/boat/edit" exact component={FormEdit}/>
     </Switch>
