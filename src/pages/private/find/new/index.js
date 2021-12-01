@@ -19,7 +19,7 @@ export function FindNew() {
         <ListItens>
           {
             searchItems.map(item => (
-              <Item to={`/view/${item.title}/${item.encounter}`} key={item.id}>
+              <Item to={`/${item.encounter}/new`} key={item.id}>
                 <span>{item.title}</span>
               </Item>
             ))

@@ -19,7 +19,7 @@ export function FindView() {
         <ListItens>
           {
             searchItems.map(item => (
-              <Item to={`/view/${item.title}/${item.encounter}`} key={item.id}>
+              <Item to={`/${item.encounter}/infos`} key={item.id}>
                 <span>{item.title}</span>
               </Item>
             ))

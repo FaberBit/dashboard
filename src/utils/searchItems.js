@@ -12,7 +12,7 @@ export const searchItems = [
     { 
         id: 3,
         title: 'Lanchas',
-        encounter: '123a4'
+        encounter: 'boat'
     },
     { 
         id: 4,
