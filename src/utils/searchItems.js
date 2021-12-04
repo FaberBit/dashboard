@@ -2,7 +2,7 @@ export const searchItems = [
     { 
         id: 1,
         title: 'Clientes',
-        encounter: '123a4'
+        encounter: 'client'
     },
     { 
         id: 2,
