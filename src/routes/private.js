@@ -4,6 +4,7 @@ import { BoatDetails } from '../pages/private/entity/boat/details';
 import { FormNew } from '../pages/private/entity/boat/new';
 import { FormEdit } from '../pages/private/entity/boat/update';
 import { ClientDetails } from '../pages/private/entity/clients/details';
+import { ClientNew } from '../pages/private/entity/clients/new';
 import { Features } from '../pages/private/features';
 import { FindNew } from '../pages/private/find/new';
 import { FindView } from '../pages/private/find/view';
@@ -38,8 +39,8 @@ export function PrivateRoutes() {
       <Route path="/boat/edit" exact component={FormEdit}/>
 
       <Route path="/client/infos" exact component={ClientDetails}/>
-      {/* <Route path="/boat/new" exact component={FormNew}/>
-      <Route path="/boat/edit" exact component={FormEdit}/> */}
+      <Route path="/client/new" exact component={ClientNew}/>
+      {/* <Route path="/boat/edit" exact component={ClientEdit}/> */}
     </Switch>
   );
 }
