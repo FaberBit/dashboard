@@ -20,11 +20,11 @@ export function ClientEdit() {
         <Form>
           <h4>Revise os campos</h4>
 
-          <Input title="Nome" width={416} placeholder="Nome" value="any name"/>
+          <Input title="Nome" width={316} placeholder="Nome" value="any name"/>
 
-          <Input title="Email" width={416} placeholder="Email" value="any@mail.com"/>
+          <Input title="Email" width={316} placeholder="Email" value="any@mail.com"/>
 
-          <Input title="Telefone" width={416} placeholder="Telefone" value="any_telefone"/>
+          <Input title="Telefone" width={316} placeholder="Telefone" value="any_telefone"/>
 
           <Button title="Salvar" width={140}/>
         </Form>

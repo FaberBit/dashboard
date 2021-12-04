@@ -25,7 +25,7 @@ export function ClientDetails() {
             <strong>11 999706186</strong>
             <strong>20/11/2021</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/client/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -40,7 +40,7 @@ export function ClientDetails() {
             <strong>11 999706186</strong>
             <strong>20/11/2021</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/client/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -55,7 +55,7 @@ export function ClientDetails() {
             <strong>11 999706186</strong>
             <strong>20/11/2021</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/client/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -70,7 +70,7 @@ export function ClientDetails() {
             <strong>11 999706186</strong>
             <strong>20/11/2021</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/client/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -85,7 +85,7 @@ export function ClientDetails() {
             <strong>11 999706186</strong>
             <strong>20/11/2021</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/client/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -100,7 +100,7 @@ export function ClientDetails() {
             <strong>11 999706186</strong>
             <strong>20/11/2021</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/client/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
