@@ -12,20 +12,18 @@ export function ClientDetails() {
 
       <Content>
         <HeaderContent>
-            <strong>Nome da embarcação</strong>
-            <strong>Proprietário</strong>
-            <strong>Marca</strong>
-            <strong>Modelo</strong>
-            <strong>Data de criação</strong>
+            <strong>Nome</strong>
+            <strong>Email</strong>
+            <strong>Telefone</strong>
+            <strong>Adicionado em</strong>
             <strong>Opções</strong>
         </HeaderContent>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
-            <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
-            <strong>12/08/2003</strong>
+            <strong>Fulano dos Santos</strong>
+            <strong>fulano@mail.com</strong>
+            <strong>11 999706186</strong>
+            <strong>20/11/2021</strong>
             <div className="actionsButton">
                 <a href="/boat/edit">
                     <FiEdit2 color="#000" size={22}/>
@@ -37,11 +35,10 @@ export function ClientDetails() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
-            <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
-            <strong>12/08/2003</strong>
+            <strong>Fulano dos Santos</strong>
+            <strong>fulano@mail.com</strong>
+            <strong>11 999706186</strong>
+            <strong>20/11/2021</strong>
             <div className="actionsButton">
                 <a href="/boat/edit">
                     <FiEdit2 color="#000" size={22}/>
@@ -53,11 +50,10 @@ export function ClientDetails() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
-            <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
-            <strong>12/08/2003</strong>
+            <strong>Fulano dos Santos</strong>
+            <strong>fulano@mail.com</strong>
+            <strong>11 999706186</strong>
+            <strong>20/11/2021</strong>
             <div className="actionsButton">
                 <a href="/boat/edit">
                     <FiEdit2 color="#000" size={22}/>
@@ -69,11 +65,10 @@ export function ClientDetails() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
-            <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
-            <strong>12/08/2003</strong>
+            <strong>Fulano dos Santos</strong>
+            <strong>fulano@mail.com</strong>
+            <strong>11 999706186</strong>
+            <strong>20/11/2021</strong>
             <div className="actionsButton">
                 <a href="/boat/edit">
                     <FiEdit2 color="#000" size={22}/>
@@ -85,11 +80,10 @@ export function ClientDetails() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
-            <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
-            <strong>12/08/2003</strong>
+            <strong>Fulano dos Santos</strong>
+            <strong>fulano@mail.com</strong>
+            <strong>11 999706186</strong>
+            <strong>20/11/2021</strong>
             <div className="actionsButton">
                 <a href="/boat/edit">
                     <FiEdit2 color="#000" size={22}/>
@@ -101,11 +95,10 @@ export function ClientDetails() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
-            <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
-            <strong>12/08/2003</strong>
+            <strong>Fulano dos Santos</strong>
+            <strong>fulano@mail.com</strong>
+            <strong>11 999706186</strong>
+            <strong>20/11/2021</strong>
             <div className="actionsButton">
                 <a href="/boat/edit">
                     <FiEdit2 color="#000" size={22}/>
