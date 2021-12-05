@@ -25,7 +25,7 @@ export function EmployeeDetails() {
             <strong>11 999706186</strong>
             <strong>20/11/2021</strong>
             <div className="actionsButton">
-                <a href="/client/edit">
+                <a href="/employee/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>

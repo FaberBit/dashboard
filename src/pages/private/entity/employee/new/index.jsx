@@ -20,11 +20,11 @@ export function EmployeeNew() {
         <Form>
           <h4>Preencha os campos</h4>
 
-          <Input title="Nome" width={316} placeholder="Nome do cliente"/>
+          <Input title="Nome" width={316} placeholder="Nome do funcionario"/>
 
-          <Input title="Email" width={316} placeholder="E-mail mais utilizado pelo cliente"/>
+          <Input title="Email" width={316} placeholder="E-mail mais utilizado pelo funcionario"/>
 
-          <Input title="Telefone" width={316} placeholder="Telefone para contato do cliente"/>
+          <Input title="Telefone" width={316} placeholder="Telefone para contato do funcionario"/>
 
           <Button title="Salvar" width={140}/>
         </Form>
