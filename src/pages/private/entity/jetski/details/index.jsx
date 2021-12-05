@@ -27,7 +27,7 @@ export function JetskiDetails() {
             <strong>GTX1299</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/jetski/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -43,7 +43,7 @@ export function JetskiDetails() {
             <strong>GTX1299</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/jetski/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -59,7 +59,7 @@ export function JetskiDetails() {
             <strong>GTX1299</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/jetski/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -75,7 +75,7 @@ export function JetskiDetails() {
             <strong>GTX1299</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/jetski/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -91,7 +91,7 @@ export function JetskiDetails() {
             <strong>GTX1299</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/jetski/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -107,7 +107,7 @@ export function JetskiDetails() {
             <strong>GTX1299</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/boat/edit">
+                <a href="/jetski/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
