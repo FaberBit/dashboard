@@ -1,5 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 import { ReportBugs } from '../pages/private/bugs';
+import { JetskiDetails } from '../pages/private/entity/boat copy/details';
+import { JetskiNew } from '../pages/private/entity/boat copy/new';
+import { JetskiEdit } from '../pages/private/entity/boat copy/update';
 import { BoatDetails } from '../pages/private/entity/boat/details';
 import { FormNew } from '../pages/private/entity/boat/new';
 import { FormEdit } from '../pages/private/entity/boat/update';
@@ -38,10 +41,6 @@ export function PrivateRoutes() {
 
       <Route path="/reports/bugs" exact component={ReportBugs}/>
 
-      <Route path="/boat/infos" exact component={BoatDetails}/>
-      <Route path="/boat/new" exact component={FormNew}/>
-      <Route path="/boat/edit" exact component={FormEdit}/>
-
       <Route path="/client/infos" exact component={ClientDetails}/>
       <Route path="/client/new" exact component={ClientNew}/>
       <Route path="/client/edit" exact component={ClientEdit}/>
@@ -49,6 +48,14 @@ export function PrivateRoutes() {
       <Route path="/employee/infos" exact component={EmployeeDetails}/>
       <Route path="/employee/new" exact component={EmployeeNew}/>
       <Route path="/employee/edit" exact component={EmployeeEdit}/>
+
+      <Route path="/boat/infos" exact component={BoatDetails}/>
+      <Route path="/boat/new" exact component={FormNew}/>
+      <Route path="/boat/edit" exact component={FormEdit}/>
+
+      <Route path="/jetski/infos" exact component={JetskiDetails}/>
+      <Route path="/jetski/new" exact component={JetskiNew}/>
+      <Route path="/jetski/edit" exact component={JetskiEdit}/>
     </Switch>
   );
 }

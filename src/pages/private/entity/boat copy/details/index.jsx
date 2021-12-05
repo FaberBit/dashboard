@@ -5,10 +5,10 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { HeaderMain } from '../../../../../components/headers/main'
 import { ButtonsPages, Container, Content, HeaderContent, ItemInfo } from './styles';
 
-export function BoatDetails() {
+export function JetskiDetails() {
   return (
     <Container>
-      <HeaderMain title="Lanchas"/>
+      <HeaderMain title="Jetski"/>
 
       <Content>
         <HeaderContent>

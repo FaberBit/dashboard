@@ -9,10 +9,10 @@ import NewSvg from '../../../../../assets/img/banners/new.svg'
 import { Input } from '../../../../../components/inputs/main';
 import { Button } from '../../../../../components/buttons/main';
 
-export function FormEdit() {
+export function JetskiEdit() {
   return (
     <Container>
-      <HeaderMain title="Edite sua Lancha"/>
+      <HeaderMain title="Edite Jetski"/>
 
       <Content>
         <img src={NewSvg} alt='Form' />
