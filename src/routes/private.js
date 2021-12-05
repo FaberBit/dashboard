@@ -1,8 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 import { ReportBugs } from '../pages/private/bugs';
-import { JetskiDetails } from '../pages/private/entity/boat copy/details';
-import { JetskiNew } from '../pages/private/entity/boat copy/new';
-import { JetskiEdit } from '../pages/private/entity/boat copy/update';
+import { JetskiDetails } from '../pages/private/entity/jetski/details';
+import { JetskiNew } from '../pages/private/entity/jetski/new';
+import { JetskiEdit } from '../pages/private/entity/jetski/update';
 import { BoatDetails } from '../pages/private/entity/boat/details';
 import { FormNew } from '../pages/private/entity/boat/new';
 import { FormEdit } from '../pages/private/entity/boat/update';
