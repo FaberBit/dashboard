@@ -27,6 +27,7 @@ import { SchedulesNew } from '../pages/private/entity/schedules/new';
 import { SchedulesEdit } from '../pages/private/entity/schedules/update';
 import { ReviewsList } from '../pages/private/entity/reviews/list';
 import { ReviewsNew } from '../pages/private/entity/reviews/new';
+import { ReviewsEdit } from '../pages/private/entity/reviews/update';
 
 export function PrivateRoutes() {
   return (
@@ -68,7 +69,7 @@ export function PrivateRoutes() {
 
       <Route path="/reviews/infos" exact component={ReviewsList}/>
       <Route path="/reviews/new" exact component={ReviewsNew}/>
-      {/* <Route path="/schedules/edit" exact component={SchedulesEdit}/> */}
+      <Route path="/reviews/edit" exact component={ReviewsEdit}/>
     </Switch>
   );
 }
