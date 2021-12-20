@@ -12,22 +12,20 @@ export function SchedulesList() {
 
       <Content>
         <HeaderContent>
-            <strong>Nome da embarcação</strong>
-            <strong>Proprietário</strong>
-            <strong>Marca</strong>
-            <strong>Modelo</strong>
-            <strong>Data de criação</strong>
+            <strong>Cliente</strong>
+            <strong>Embarcação</strong>
+            <strong>Observações</strong>
+            <strong>Data do agendamento</strong>
             <strong>Opções</strong>
         </HeaderContent>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
             <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
+            <strong>Perolá Negra dos Sete Mares Escuros</strong>
+            <strong className="schedulesDescription">Irei viajar por 4 dias entre x e y lugar schedulesDescription schedulesDescriptionschedulesDescription</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/jetski/edit">
+                <a href="/schedules/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -37,13 +35,12 @@ export function SchedulesList() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
             <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
+            <strong>Perolá Negra dos Sete Mares Escuros</strong>
+            <strong className="schedulesDescription">Irei viajar por 4 dias entre x e y lugar</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/jetski/edit">
+                <a href="/schedules/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -53,13 +50,12 @@ export function SchedulesList() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
             <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
+            <strong>Perolá Negra dos Sete Mares Escuros</strong>
+            <strong className="schedulesDescription">Irei viajar por 4 dias entre x e y lugar</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/jetski/edit">
+                <a href="/schedules/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -69,13 +65,12 @@ export function SchedulesList() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
             <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
+            <strong>Perolá Negra dos Sete Mares Escuros</strong>
+            <strong className="schedulesDescription">Irei viajar por 4 dias entre x e y lugar</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/jetski/edit">
+                <a href="/schedules/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -85,13 +80,12 @@ export function SchedulesList() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
             <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
+            <strong>Perolá Negra dos Sete Mares Escuros</strong>
+            <strong className="schedulesDescription">Irei viajar por 4 dias entre x e y lugar</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/jetski/edit">
+                <a href="/schedules/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>
@@ -101,13 +95,12 @@ export function SchedulesList() {
         </ItemInfo>
 
         <ItemInfo>
-            <strong>Perolá Negra dos Sete Mares Escuros</strong>
             <strong>João Carlos</strong>
-            <strong>Ford</strong>
-            <strong>GTX1299</strong>
+            <strong>Perolá Negra dos Sete Mares Escuros</strong>
+            <strong className="schedulesDescription">Irei viajar por 4 dias entre x e y lugar</strong>
             <strong>12/08/2003</strong>
             <div className="actionsButton">
-                <a href="/jetski/edit">
+                <a href="/schedules/edit">
                     <FiEdit2 color="#000" size={22}/>
                 </a>
                 <button>

@@ -17,7 +17,7 @@ export const Content = styled.div`
 export const HeaderContent = styled.div`
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 3fr 3fr 2fr 2fr;
   align-items: center;
   text-align: center;
 
@@ -33,7 +33,7 @@ export const HeaderContent = styled.div`
 export const ItemInfo = styled.div`
   margin-top: 1.6rem;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 3fr 3fr 2fr 2fr;
   align-items: center;
   text-align: center;
   background-color: ${colors.white};
@@ -50,6 +50,13 @@ export const ItemInfo = styled.div`
     font-size: 0.875rem;
     line-height: 21px;
     color: ${colors.secundaryTextureDark};
+  }
+
+  .schedulesDescription{
+    max-width: 300px; 
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
   }
 
   .actionsButton {
