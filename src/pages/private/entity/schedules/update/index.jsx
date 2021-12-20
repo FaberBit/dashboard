@@ -12,7 +12,7 @@ import { Button } from '../../../../../components/buttons/main';
 export function SchedulesEdit() {
   return (
     <Container>
-      <HeaderMain title="Edite Jetski"/>
+      <HeaderMain title="Edite o Agendamento"/>
 
       <Content>
         <img src={NewSvg} alt='Form' />

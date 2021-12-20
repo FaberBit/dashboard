@@ -24,6 +24,7 @@ import { Notifications } from '../pages/private/notifications';
 import { View } from '../pages/private/view';
 import { SchedulesList } from '../pages/private/entity/schedules/list';
 import { SchedulesNew } from '../pages/private/entity/schedules/new';
+import { SchedulesEdit } from '../pages/private/entity/schedules/update';
 
 export function PrivateRoutes() {
   return (
@@ -61,7 +62,7 @@ export function PrivateRoutes() {
 
       <Route path="/schedules/infos" exact component={SchedulesList}/>
       <Route path="/schedules/new" exact component={SchedulesNew}/>
-      {/* <Route path="/jetski/edit" exact component={JetskiEdit}/> */}
+      <Route path="/schedules/edit" exact component={SchedulesEdit}/>
     </Switch>
   );
 }
