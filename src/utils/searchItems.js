@@ -22,21 +22,21 @@ export const searchItems = [
     { 
         id: 5,
         title: 'Agendamentos',
-        encounter: '123a4'
+        encounter: 'schedules'
     },
     { 
         id: 6,
         title: 'Pagamentos',
-        encounter: '123a4'
+        encounter: 'payments'
     },
     { 
         id: 7,
         title: 'Classificados',
-        encounter: '123a4'
+        encounter: 'classifields'
     },
     { 
         id: 8,
         title: 'Revisões',
-        encounter: '123a4'
+        encounter: 'reviews'
     },
 ] 
