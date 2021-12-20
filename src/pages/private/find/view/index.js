@@ -24,6 +24,9 @@ export function FindView() {
               </Item>
             ))
           }
+          <Item to="/payments/infos" >
+            <span>Pagamentos</span>
+          </Item>
         </ListItens>
       </Content>
     </Container>

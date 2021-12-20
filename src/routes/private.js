@@ -28,6 +28,7 @@ import { SchedulesEdit } from '../pages/private/entity/schedules/update';
 import { ReviewsList } from '../pages/private/entity/reviews/list';
 import { ReviewsNew } from '../pages/private/entity/reviews/new';
 import { ReviewsEdit } from '../pages/private/entity/reviews/update';
+import { ClientPaymentsList } from '../pages/private/entity/payments/list';
 
 export function PrivateRoutes() {
   return (
@@ -50,6 +51,8 @@ export function PrivateRoutes() {
       <Route path="/client/infos" exact component={ClientDetails}/>
       <Route path="/client/new" exact component={ClientNew}/>
       <Route path="/client/edit" exact component={ClientEdit}/>
+
+      <Route path="/payments/infos" exact component={ClientPaymentsList}/>
 
       <Route path="/employee/infos" exact component={EmployeeDetails}/>
       <Route path="/employee/new" exact component={EmployeeNew}/>

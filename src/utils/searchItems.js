@@ -25,11 +25,6 @@ export const searchItems = [
         encounter: 'schedules'
     },
     { 
-        id: 6,
-        title: 'Pagamentos',
-        encounter: 'payments'
-    },
-    { 
         id: 7,
         title: 'Classificados',
         encounter: 'classifields'
