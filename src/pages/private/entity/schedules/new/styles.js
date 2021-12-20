@@ -28,9 +28,9 @@ export const Form = styled.div`
   border-radius: 8px;
 
   width: 30rem;
-  height: 37.5rem;
+  height: 32.5rem;
 
-  margin-top: -2rem;
+  margin-top: -1rem;
 
   h4{
     font-weight: 600;
