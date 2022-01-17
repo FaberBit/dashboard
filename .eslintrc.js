@@ -25,6 +25,9 @@ module.exports = {
       "react/jsx-no-constructed-context-values": "off",
       "no-console": "off",
       "import/no-named-as-default-member": "off",
-      "jsx-a11y/label-has-associated-control": "off"
+      "jsx-a11y/label-has-associated-control": "off",
+      "no-param-reassign": "off",
+      "consistent-return": "off",
+      "no-sparse-arrays":"off",
     }
 }
