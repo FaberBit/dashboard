@@ -28,7 +28,7 @@ export const Form = styled.div`
   border-radius: 8px;
 
   width: 24rem;
-  height: 22.5rem;
+  height: 27.5rem;
 
   margin-top: 2rem;
 
