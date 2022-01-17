@@ -11,11 +11,11 @@ import {
 
 export function ClientDetails() {
   const [users, setUsers] = useState('');
-  // const [page, setPage] = useState(1);
+  const [page, setPage] = useState(1);
 
   async function loadUsers() {
     try {
-      const { data } = await api.get('/encounter/usr');
+      const { data } = await api.get(`/encounter/usr?index=6&page=${page}`);
       setUsers(data);
     } catch (error) {
       console.log(error.response.data);
@@ -24,7 +24,7 @@ export function ClientDetails() {
 
   useEffect(() => {
     loadUsers();
-  }, []);
+  }, [, page]);
 
   return (
     <Container>
@@ -40,35 +40,48 @@ export function ClientDetails() {
         </HeaderContent>
 
         {
-          users.map((user) => (
-            <ItemInfo>
-              <strong>{user.name}</strong>
-              <strong>{user.email}</strong>
-              <strong>{user.phone}</strong>
-              <strong>20/11/2021</strong>
-              <div className="actionsButton">
-                <a href="/client/edit">
-                  <FiEdit2 color="#000" size={22} />
-                </a>
-                <button type="submit">
-                  <RiDeleteBin6Line color="#000" size={22} />
+          users.length > 0 ? (
+            <>
+              {
+                users.map((user) => (
+                  <ItemInfo key={user.id}>
+                    <strong>{user.name}</strong>
+                    <strong>{user.email}</strong>
+                    <strong>{user.phone}</strong>
+                    <strong>20/11/2021</strong>
+                    <div className="actionsButton">
+                      <a href="/client/edit">
+                        <FiEdit2 color="#000" size={22} />
+                      </a>
+                      <button type="submit">
+                        <RiDeleteBin6Line color="#000" size={22} />
+                      </button>
+                    </div>
+                  </ItemInfo>
+                ))
+            }
+              <ButtonsPages>
+                <button
+                  type="submit"
+                  onClick={() => {
+                    if (page > 1) {
+                      return setPage(page - 1);
+                    }
+                  }}
+                >
+                  <FiArrowLeft size={20} />
                 </button>
-              </div>
-            </ItemInfo>
-          ))
+
+                <span>{page}</span>
+
+                <button type="submit" onClick={() => setPage(page + 1)}>
+                  <FiArrowRight size={20} />
+                </button>
+              </ButtonsPages>
+            </>
+          ) : null
         }
 
-        <ButtonsPages>
-          <button type="submit">
-            <FiArrowLeft size={20} />
-          </button>
-
-          <span>01</span>
-
-          <button type="submit">
-            <FiArrowRight size={20} />
-          </button>
-        </ButtonsPages>
       </Content>
     </Container>
   );
