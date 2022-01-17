@@ -9,7 +9,11 @@ export function TextBar({ title, span, colorSpan }) {
       </h4>
 
       <InfoSpan colorSpan={colorSpan}>
-        <span> { span } </span>
+        <span>
+          {' '}
+          { span }
+          {' '}
+        </span>
       </InfoSpan>
     </Box>
   );

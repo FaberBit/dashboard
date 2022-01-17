@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import colors from "../../../../../styles/colors";
+import styled from 'styled-components';
+import colors from '../../../../../styles/colors';
 
 export const Container = styled.div`
   padding: 2.5rem 3.75rem;
@@ -53,10 +53,10 @@ export const ItemInfo = styled.div`
   }
 
   .schedulesDescription{
-    max-width: 300px; 
+    max-width: 300px;
     white-space: nowrap;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .actionsButton {

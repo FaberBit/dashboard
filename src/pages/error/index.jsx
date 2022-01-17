@@ -1,15 +1,17 @@
-import React from 'react'
-import { IoLogInOutline } from "react-icons/io5";
+import React from 'react';
+import { IoLogInOutline } from 'react-icons/io5';
 
-import { Container, Title, ImageError, Button } from './styles'
+import {
+  Container, Title, ImageError, Button,
+} from './styles';
 
-import BannerStars from '../../assets/img/banners/stars.svg'
+import BannerStars from '../../assets/img/banners/stars.svg';
 import { useUser } from '../../hooks/useUser';
 
 // import { toast } from 'react-toastify';
 
 export function ErrorNotFound() {
-  const {LogoutSession} = useUser()
+  const { LogoutSession } = useUser();
   return (
     <Container>
       <Title>Página não encontrada</Title>
@@ -19,9 +21,8 @@ export function ErrorNotFound() {
 
       <Button onClick={() => LogoutSession()}>
         <span>Voltar para o site</span>
-        <IoLogInOutline size={24}/>
+        <IoLogInOutline size={24} />
       </Button>
     </Container>
-  )
+  );
 }
-

@@ -21,7 +21,7 @@ export const ItemContainer = styled(Link)`
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
- 
+
     text-align: center;
 
     color: ${colors.secundary};

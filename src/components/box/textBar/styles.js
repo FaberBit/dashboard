@@ -25,7 +25,7 @@ export const Box = styled.div`
 `;
 
 export const InfoSpan = styled.div`
-  background-color: ${props => props.colorSpan ? props.colorSpan : colors.primary};
+  background-color: ${(props) => (props.colorSpan ? props.colorSpan : colors.primary)};
   width: 8.75rem;
   height: 1.5rem;
   border-radius: 10px;

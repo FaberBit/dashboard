@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.button`
   span {
@@ -10,7 +10,7 @@ export const Container = styled.button`
     color: #FFFFFF;
   }
 
-  width: ${(props) => (props.width ? `${String(props.width)}px` : "416px")};
+  width: ${(props) => (props.width ? `${String(props.width)}px` : '416px')};
   border: 0;
   margin-top: 1rem;
 
