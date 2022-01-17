@@ -16,12 +16,12 @@ export function UserContextProvider({ children }) {
   useEffect(() => {
     async function loadData() {
       const userData = await JSON.parse(localStorage.getItem('@FaberBit/user'));
-      const tokenData = await JSON.parse(localStorage.getItem('@FaberBit/token'));
+      const tokenData = await localStorage.getItem('@FaberBit/token');
 
       setUser(userData);
       setToken(tokenData);
 
-      api.defaults.headers.authorization = tokenData;
+      // api.defaults.headers.authorization = tokenData;
     }
 
     loadData();
@@ -37,7 +37,7 @@ export function UserContextProvider({ children }) {
       setToken(response.data.token);
 
       localStorage.setItem('@FaberBit/user', JSON.stringify(response.data.user));
-      localStorage.setItem('@FaberBit/token', JSON.stringify(String(response.data.token)));
+      localStorage.setItem('@FaberBit/token', response.data.token);
 
       history.push('/');
     } catch (error) {
