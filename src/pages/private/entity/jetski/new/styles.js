@@ -10,6 +10,7 @@ export const Content = styled.div`
   display: grid;
   /* align-items: center; */
   justify-content: center;
+  background-color: #f8f9fb;
   grid-template-columns: 8fr 5fr;
   margin-top: 3.25rem;
 
@@ -28,9 +29,10 @@ export const Form = styled.div`
   border-radius: 8px;
 
   width: 30rem;
-  height: 37.5rem;
+  height: 47.5rem;
 
   margin-top: -2rem;
+  margin-bottom: 2rem;
 
   h4{
     font-weight: 600;
