@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import { toast } from 'react-toastify';
 import {
   Container, Content, Form, NotificationsList,
 } from './styles';
@@ -15,6 +16,9 @@ import api from '../../../services/api';
 export function Features() {
   const [features, setFeatures] = useState([]);
 
+  const [title, setTitle] = useState('');
+  const [message, setMessage] = useState('');
+
   async function loadFeatures() {
     try {
       const { data } = await api.get('/encounter/feat?index=5&page=1');
@@ -24,9 +28,28 @@ export function Features() {
     }
   }
 
+  async function handleSaveData() {
+    if (!title || !message) {
+      return toast.error('Preencha todos os campos.');
+    }
+
+    try {
+      await api.post('/encounter/feat', {
+        title,
+        message,
+      });
+      loadFeatures();
+      toast.success(`${title} vem por ai!`);
+    } catch (error) {
+      console.log(error.response);
+      toast.error(`${error.response.data.error}`);
+    }
+  }
+
   useEffect(() => {
     loadFeatures();
   }, []);
+
   return (
     <Container>
       <HeaderMain title="Novas Funcionalidades" />
@@ -51,11 +74,23 @@ export function Features() {
           <h4>Peça uma nova funcionalidade</h4>
           <span className="subtitle">conte-nos sua ideia</span>
 
-          <Input title="Título" width={230} placeholder="Escolha um título" />
+          <Input
+            title="Título"
+            width={230}
+            placeholder="Escolha um título"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
 
-          <TextArea title="Descrição" width={230} placeholder="Descreva sua ideia de forma clara." />
+          <TextArea
+            title="Descrição"
+            width={230}
+            placeholder="Descreva sua ideia de forma clara."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
 
-          <Button title="Enviar" width={230} />
+          <Button title="Enviar" width={230} onClick={() => handleSaveData()} />
         </Form>
       </Content>
     </Container>
