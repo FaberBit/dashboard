@@ -10,6 +10,7 @@ export function Select({
   data,
   clientSelected,
   setClientSelected,
+  // disable,
   // ...rest
 }) {
   return (
@@ -20,6 +21,7 @@ export function Select({
           setClientSelected(e.target.value);
         }}
         value={clientSelected}
+        // disable={String(disable)}
         // {...rest}
       >
         <option value="0">{messageFirst}</option>
