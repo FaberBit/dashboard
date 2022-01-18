@@ -29,5 +29,6 @@ module.exports = {
       "no-param-reassign": "off",
       "consistent-return": "off",
       "no-sparse-arrays":"off",
+      "react/destructuring-assignment": "off"
     }
 }

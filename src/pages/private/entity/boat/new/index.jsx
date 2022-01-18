@@ -41,6 +41,7 @@ export function FormNew() {
       !name
        || !marca
        || !ano
+       || !modelo
        || !comprimentototal
        || !motor
        || !combustivel
