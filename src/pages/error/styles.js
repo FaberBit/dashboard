@@ -19,7 +19,7 @@ export const ImageError = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(${props => props.background}) no-repeat center center;
+  background: url(${(props) => props.background}) no-repeat center center;
   background-size: cover;
 
 
@@ -38,7 +38,7 @@ export const Button = styled.button`
 
   background-color: ${colors.primary};
   color: ${colors.whiteAlabaster};
-  
+
   height: 2.4rem;
   width: 13.5rem;
 
@@ -52,4 +52,3 @@ export const Button = styled.button`
     margin-right: .5rem;
   }
 `;
-

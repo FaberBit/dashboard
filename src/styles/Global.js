@@ -1,6 +1,5 @@
-
 import 'react-toastify/dist/ReactToastify.css';
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
     :root{
@@ -10,12 +9,12 @@ export default createGlobalStyle`
         --red: #E52E4D;
         --blue: #5429CC;
         --green: #33cc95;
-        
+
         --blue-light: #6933FF;
-        
+
         --text-title: #363F5F;
         --text-body: #969CB3;
-        
+
         --shape: #ffffff;
         --background: #f0f2f5;
     }

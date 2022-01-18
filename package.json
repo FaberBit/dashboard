@@ -1,6 +1,6 @@
 {
-  "name": "voucolar",
-  "version": "0.1.0",
+  "name": "faberbit",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
@@ -11,6 +11,7 @@
     "axios": "^0.21.1",
     "correios-brasil": "^2.1.2",
     "cropperjs": "^1.5.11",
+    "date-fns": "^2.28.0",
     "fabricjs": "^1.0.0",
     "polished": "^4.1.1",
     "react": "^17.0.1",
@@ -47,5 +48,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "react-error-overlay": "6.0.9"
   }
 }

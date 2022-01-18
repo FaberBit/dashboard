@@ -38,12 +38,11 @@ export const InfoDashboardBanner = styled.div`
 
 `;
 
-
 export const Form = styled.div`
   background: #FCFCFC;
   height: 24rem;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
-  border-radius: .5rem; 
+  border-radius: .5rem;
   display: flex;
   align-items: center;
   flex-direction: column;

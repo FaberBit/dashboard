@@ -1,32 +1,43 @@
-import React, { useState } from 'react'
-import { IoLogInOutline } from "react-icons/io5";
+import React, { useState } from 'react';
+import { IoLogInOutline } from 'react-icons/io5';
 
-import { Container, Form, FormInput, InfoDashboardBanner, FormSubmitButton, FormHeader, FormContent, Header, Content } from './styles'
+import { toast } from 'react-toastify';
+import {
+  Container,
+  Form,
+  FormInput,
+  InfoDashboardBanner,
+  FormSubmitButton,
+  FormHeader,
+  FormContent,
+  Header,
+  Content,
+} from './styles';
 
-import BannerLogin from '../../../assets/img/banners/bannerLoginA.png'
-import LogoOfficial from '../../../assets/img/logos/official.png'
+import BannerLogin from '../../../assets/img/banners/bannerLoginA.png';
+import LogoOfficial from '../../../assets/img/logos/official.png';
 
 import { Input } from '../../../components/inputs/simples';
 
-import { useUser } from '../../../hooks/useUser'
-import { toast } from 'react-toastify';
+import { useUser } from '../../../hooks/useUser';
 
 export function Login() {
-  const { handleSession } = useUser()
+  const { handleSession } = useUser();
 
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  function handleLogin(){
-    if(!email || !password){
-      return toast.warn("Preencha todos os campos.")
+  // eslint-disable-next-line consistent-return
+  function handleLogin() {
+    if (!email || !password) {
+      return toast.warn('Preencha todos os campos.');
     }
 
-    if(password.length < 6){
-      return toast.warn("Sua senha deve ter pelo menos 6 digitos.")
+    if (password.length < 6) {
+      return toast.warn('Sua senha deve ter pelo menos 6 digitos.');
     }
 
-    handleSession({ email, password })
+    handleSession({ email, password });
   }
 
   return (
@@ -53,11 +64,11 @@ export function Login() {
             <span>para se logar</span>
 
             <FormInput>
-              <Input placeholder="Seu e-mail" type="e-mail" onChange={(e) => setEmail(e.target.value)}/>
+              <Input placeholder="Seu e-mail" type="e-mail" onChange={(e) => setEmail(e.target.value)} />
             </FormInput>
 
             <FormInput>
-              <Input placeholder="Sua senha" type="password" onChange={(e) => setPassword(e.target.value)}/>
+              <Input placeholder="Sua senha" type="password" onChange={(e) => setPassword(e.target.value)} />
             </FormInput>
 
             <FormSubmitButton onClick={() => handleLogin()}>
@@ -67,6 +78,5 @@ export function Login() {
         </Form>
       </Content>
     </Container>
-  )
+  );
 }
-
