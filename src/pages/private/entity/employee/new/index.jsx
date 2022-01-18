@@ -19,6 +19,14 @@ export function EmployeeNew() {
   const [phone, setPhone] = useState('');
 
   async function handleSaveData() {
+    if (!name || !email || !password || !phone) {
+      return toast.error('Preencha todos os campos.');
+    }
+
+    if (password < 4 && password > 6) {
+      return toast.error('A senha deve ter de 4 à 6 caracteres.');
+    }
+
     try {
       const response = await api.post('/users', {
         name,
