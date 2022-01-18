@@ -48,7 +48,7 @@ export function EmployeeDetails() {
                     <strong>{user.phone}</strong>
                     <strong>20/11/2021</strong>
                     <div className="actionsButton">
-                      <a href="/client/edit">
+                      <a href={`/client/edit/${user.id}`}>
                         <FiEdit2 color="#000" size={22} />
                       </a>
                       <button type="submit">

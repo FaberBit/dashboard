@@ -51,7 +51,7 @@ export function BoatDetails() {
                     <strong>{vessel.modelo}</strong>
                     <strong>{vessel.createdAt}</strong>
                     <div className="actionsButton">
-                      <a href="/boat/edit">
+                      <a href={`/boat/edit/${vessel.id}`}>
                         <FiEdit2 color="#000" size={22} />
                       </a>
                       <button type="submit">

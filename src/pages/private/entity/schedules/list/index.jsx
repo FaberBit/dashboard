@@ -49,7 +49,7 @@ export function SchedulesList() {
                     <strong className="schedulesDescription">{schedule.comments}</strong>
                     <strong>{format(parseISO(schedule.time), 'dd/MM/yyyy')}</strong>
                     <div className="actionsButton">
-                      <a href="/schedules/edit">
+                      <a href={`/schedules/edit/${schedule.id}`}>
                         <FiEdit2 color="#000" size={22} />
                       </a>
                       <button type="submit">

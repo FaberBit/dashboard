@@ -48,7 +48,7 @@ export function ReviewsList() {
                     <strong>{review.expert}</strong>
                     <strong>{review.createdAt}</strong>
                     <div className="actionsButton">
-                      <a href="/reviews/edit">
+                      <a href={`/reviews/edit/${review.id}`}>
                         <FiEdit2 color="#000" size={22} />
                       </a>
                       <button type="submit">

@@ -51,29 +51,29 @@ export function PrivateRoutes() {
 
       <Route path="/client/infos" exact component={ClientDetails} />
       <Route path="/client/new" exact component={ClientNew} />
-      <Route path="/client/edit" exact component={ClientEdit} />
+      <Route path="/client/edit/:id" component={ClientEdit} />
 
       <Route path="/payments/infos" exact component={ClientPaymentsList} />
 
       <Route path="/employee/infos" exact component={EmployeeDetails} />
       <Route path="/employee/new" exact component={EmployeeNew} />
-      <Route path="/employee/edit" exact component={EmployeeEdit} />
+      <Route path="/employee/edit/:id" component={EmployeeEdit} />
 
       <Route path="/boat/infos" exact component={BoatDetails} />
       <Route path="/boat/new" exact component={FormNew} />
-      <Route path="/boat/edit" exact component={FormEdit} />
+      <Route path="/boat/edit/:id" component={FormEdit} />
 
       <Route path="/jetski/infos" exact component={JetskiDetails} />
       <Route path="/jetski/new" exact component={JetskiNew} />
-      <Route path="/jetski/edit" exact component={JetskiEdit} />
+      <Route path="/jetski/edit/:id" component={JetskiEdit} />
 
       <Route path="/schedules/infos" exact component={SchedulesList} />
       <Route path="/schedules/new" exact component={SchedulesNew} />
-      <Route path="/schedules/edit" exact component={SchedulesEdit} />
+      <Route path="/schedules/edit/:id" component={SchedulesEdit} />
 
       <Route path="/reviews/infos" exact component={ReviewsList} />
       <Route path="/reviews/new" exact component={ReviewsNew} />
-      <Route path="/reviews/edit" exact component={ReviewsEdit} />
+      <Route path="/reviews/edit/:id" component={ReviewsEdit} />
     </Switch>
   );
 }
