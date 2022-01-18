@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import {
   Container, Content, Form, NotificationsList,
@@ -10,18 +10,41 @@ import { Button } from '../../../components/buttons/main';
 import { TextBar } from '../../../components/box/textBar';
 import { TextArea } from '../../../components/inputs/textarea';
 
+import api from '../../../services/api';
+
 export function Features() {
+  const [features, setFeatures] = useState([]);
+
+  async function loadFeatures() {
+    try {
+      const { data } = await api.get('/encounter/feat?index=5&page=1');
+      setFeatures(data);
+    } catch (error) {
+      console.log(error.response.data);
+    }
+  }
+
+  useEffect(() => {
+    loadFeatures();
+  }, []);
   return (
     <Container>
       <HeaderMain title="Novas Funcionalidades" />
 
       <Content>
         <NotificationsList>
-          <TextBar title="Pagina para Classificados" span="Em analise" colorSpan="#FFD43B" />
-          <TextBar title="Scroll na pagina home" span="Em produção" colorSpan="#17A9F8" />
-          <TextBar title="Novo cadastro do usuario" span="Concluido" colorSpan="#4CD42B" />
-          <TextBar title="Novo cadastro do usuario" span="Concluido" colorSpan="#4CD42B" />
-          <TextBar title="Novo cadastro do usuario" span="Concluido" colorSpan="#4CD42B" />
+          {
+            features.length ? (
+              features.map((feature) => (
+                <TextBar
+                  key={feature.id}
+                  title={feature.title}
+                  span={feature.status}
+                  colorSpan={feature.statusColor}
+                />
+              ))
+            ) : null
+          }
         </NotificationsList>
 
         <Form>
