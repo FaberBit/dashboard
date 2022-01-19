@@ -33,8 +33,9 @@ export function ReviewsEdit(props) {
     }
 
     try {
+      const lastFormmated = last.split('-').reverse().join('/');
       await api.put(`/reviews/${props.match.params.id}`, {
-        last,
+        last: lastFormmated,
         engineHour,
         firm,
         nextReview,
