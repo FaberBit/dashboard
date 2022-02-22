@@ -8,6 +8,7 @@ export const Container = styled.button`
     line-height: 21px;
 
     color: #FFFFFF;
+    margin-top: 4px;
   }
 
   width: ${(props) => (props.width ? `${String(props.width)}px` : '416px')};

@@ -27,7 +27,7 @@ export const searchItems = [
   {
     id: 7,
     title: 'Classificados',
-    encounter: 'classifields',
+    encounter: 'classifieds',
   },
   {
     id: 8,

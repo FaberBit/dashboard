@@ -7,7 +7,7 @@ export function TextArea({
 }) {
   return (
     <Container stylesProps={stylesProps} width={width} height={height}>
-      { title ?? (<span>{title}</span>)}
+      { title ? (<span>{title}</span>) : null}
       <textarea {...rest} />
     </Container>
   );

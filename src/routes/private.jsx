@@ -16,7 +16,7 @@ import { EmployeeEdit } from '../pages/private/entity/employee/update';
 import { Features } from '../pages/private/features';
 import { FindNew } from '../pages/private/find/new';
 import { FindView } from '../pages/private/find/view';
-
+import { ClassifiedsNew } from '../pages/private/entity/classifieds';
 // import { useUser } from '../hooks/useUser';
 
 import { Home } from '../pages/private/home';
@@ -74,6 +74,8 @@ export function PrivateRoutes() {
       <Route path="/reviews/infos" exact component={ReviewsList} />
       <Route path="/reviews/new" exact component={ReviewsNew} />
       <Route path="/reviews/edit/:id" component={ReviewsEdit} />
+
+      <Route path="/classifieds/new" exact component={ClassifiedsNew} />
     </Switch>
   );
 }
