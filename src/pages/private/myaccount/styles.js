@@ -27,9 +27,11 @@ export const Form = styled.div`
   background: #ffffff;
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  margin-top: 3rem;
 
   width: 30rem;
-  height: 32.5rem;
+  /* height: 32.5rem; */
+  height: 24.5rem;
 
   h4{
     font-weight: 600;

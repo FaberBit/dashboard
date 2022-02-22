@@ -60,11 +60,11 @@ export function ReviewsNew() {
     ) {
       return toast.error('Preencha todos os campos.');
     }
-
+    const lastFormmated = last.split('-').reverse().join('/');
     try {
       await api.post('/reviews', {
         vesselId: vessel.id,
-        last,
+        last: lastFormmated,
         engineHour,
         firm,
         nextReview,

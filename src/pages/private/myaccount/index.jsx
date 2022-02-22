@@ -1,6 +1,8 @@
-import React from 'react';
+/* eslint-disable react/style-prop-object */
+import React, { useState, useEffect } from 'react';
 import { BiCamera } from 'react-icons/bi';
 
+import { toast } from 'react-toastify';
 import { HeaderMain } from '../../../components/headers/main';
 
 import {
@@ -13,8 +15,36 @@ import colors from '../../../styles/colors';
 import { Input } from '../../../components/inputs/main';
 import { Button } from '../../../components/buttons/main';
 
+import api from '../../../services/api';
+import { history } from '../../../services/history';
+
 export function MyAccount() {
   const { host, user } = useUser();
+
+  const [name, setName] = useState('');
+
+  async function handleSaveData() {
+    if (!name) {
+      return toast.error('Você precisa de um nome!');
+    }
+
+    try {
+      const response = await api.put(`/users/${user.id}`, {
+        name,
+      });
+      localStorage.setItem('@FaberBit/user', JSON.stringify(response.data));
+      history.push('/');
+      window.location.reload();
+    } catch (error) {
+      console.log(error.response);
+      toast.error(`${error.response.data.error}`);
+    }
+  }
+
+  useEffect(() => {
+    setName(user.name);
+  }, [user]);
+
   return (
     <Container>
       <HeaderMain title="Atualizar sua conta" />
@@ -31,13 +61,31 @@ export function MyAccount() {
             </label>
           </InputImage>
 
-          <Input title="Nome da empresa *" width={416} placeholder="Nome fantasia" />
+          <Input
+            title="Nome da empresa *"
+            width={416}
+            placeholder="Nome fantasia"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
 
-          <Input title="Senha Antiga" width={416} placeholder="Sua senha" />
+          {/* <Input
+            title="Senha Antiga"
+            width={416}
+            placeholder="Sua senha"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          /> */}
 
-          <Input title="Nova senha" width={416} placeholder="Uma nova senha segura" />
-
-          <Button title="Salvar" width={140} />
+          {/* <Input
+            title="Nova senha"
+            width={416}
+            placeholder="Uma nova senha segura"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          /> */}
+          <br />
+          <Button title="Salvar" width={140} onClick={() => handleSaveData()} />
         </Form>
 
         <img src={ProfileSvg} alt="Search" />

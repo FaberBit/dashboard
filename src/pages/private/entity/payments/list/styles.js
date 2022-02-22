@@ -75,7 +75,7 @@ export const ItemInfo = styled.div`
     padding: 0 1.5rem;
     justify-content: space-evenly;
 
-    a {
+    .xPay{
       background-color: ${colors.red};
       height: 2rem;
       width: 2rem;
