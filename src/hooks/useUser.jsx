@@ -8,7 +8,8 @@ import { history } from '../services/history';
 const UserContext = createContext([]);
 
 export function UserContextProvider({ children }) {
-  const host = 'http://127.0.0.1:8080';
+  // const host = 'http://127.0.0.1:8080';
+  const host = 'http://164.90.150.253:8001';
 
   const [user, setUser] = useState({});
   const [token, setToken] = useState('');
